@@ -7,12 +7,14 @@ img {
     height: 100px;
     width: 150px;
     margin: 20px 20px 0px 20px;
+    box-shadow: gray 5px 5px 5px;
+    border-radius: 10px;
 }
 input[type=radio]{
     display: none;
 }
 input[type=radio]:checked + img {
-    border: 5px solid gray;
+    border: 5px solid aqua;
     
 }
 input[type=radio]:not(:checked) +img:hover {
@@ -39,4 +41,16 @@ div {
 span {
     font-size: 1.5rem;
     color:darkblue
+}
+body {
+    background-color:silver
+}
+button {
+    color: black;
+    font-family: cursive;
+    box-shadow: slategray 5px 5px 5px;
+    background-color:skyblue;
+    height: 50px;
+    width: 80px;
+    cursor: pointer;
 }
