@@ -1,5 +1,5 @@
 // import functions and grab DOM elements
-//import { getRandomThrow } from './get-random-throw.js';
+import { didUserWin } from './get-random-throw.js';
 // initialize state
 const rock = document.getElementById('rock-img');
 const paper = document.getElementById('paper-img');
@@ -21,6 +21,5 @@ submitButton.addEventListener('click', () => {
     if (randomNumber === 3){
         computerChoice = 'scissors';
     }
-    console.log(randomNumber);
     console.log('computer chose', computerChoice);
 });
