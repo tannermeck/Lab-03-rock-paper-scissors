@@ -30,12 +30,25 @@
             <li>If you have the same item as the computer, a <em>draw</em> occurs</li>
         </ul>
     </section>
-    <section>
+    <section class="rps">
         <label>
-            <input name="game" type="radio" id="rock-img" value="rock"> <img src="./assets/rock.jpeg" alt="rock">
+            <input name="game" type="radio" id="rock-img" value="rock" checked> <img src="./assets/rock.jpeg" alt="rock">
+        </label>
+        <label>
             <input name="game" type="radio" id="paper-img" value="paper"> <img src="./assets/paper.jpeg" alt="paper">
+        </label>
+        <label>
             <input name="game" type="radio" id="scissors-img" value="scissors"> <img src="./assets/scissors.jpg" alt="scissors">
         </label>
+        <button id="submit-button">Play!</button>
+    </section>
+    <section>
+        <div>Wins:</div>
+        <span id="wins"></span>
+        <div>Losses:</div>
+        <span id="losses"></span>
+        <div>Draws:</div>
+        <span id="draws"></span>
     </section>
 </body>
     <footer>
