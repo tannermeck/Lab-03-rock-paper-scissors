@@ -22,4 +22,5 @@ submitButton.addEventListener('click', () => {
         computerChoice = 'scissors';
     }
     console.log('computer chose', computerChoice);
+    
 });

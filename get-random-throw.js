@@ -1,15 +1,13 @@
-//export function getRandomThrow(computer){
-//   let number = Math.ceil(Math.random() * 3);
-//    if (number === 1){
-//        return 'rock';
-//    }
-//    if (number === 2){
-//       return 'paper';
-//   }
-  //  if (number === 3){
-    //    return 'scissors';
-  ////  }
-//}
+export function getRandomThrow(Number){
+    //let number = Math.ceil(Math.random() * 3;
+    if (Number === 1){
+        return 'rock';
+    } else if (Number === 2){
+        return 'paper';
+    } else if (Number === 3){
+        return 'scissors';
+    }
+}
 
 export function didUserWin(userChoice, computerChoice){
     if (userChoice === 'rock' && computerChoice === 'scissors'){
@@ -18,6 +16,8 @@ export function didUserWin(userChoice, computerChoice){
         return true;
     } else if (userChoice === 'paper' && computerChoice === 'rock'){
         return true;
+    } else if (userChoice === computerChoice){
+        return 'draw';
     }
     return false;
 }

@@ -1,5 +1,5 @@
 // IMPORT MODULES under test here:
-import { didUserWin } from '../get-random-throw.js';
+import { didUserWin , getRandomThrow } from '../get-random-throw.js';
 
 const test = QUnit.test;
 
@@ -22,7 +22,16 @@ test('time to test didUserWIn', (expect) => {
     expect.equal(loss1, false);
     expect.equal(loss2, false);
     expect.equal(loss3, false);
-    expect.equal(draw1, false);
-    expect.equal(draw2, false);
-    expect.equal(draw3, false);
+    expect.equal(draw1, 'draw');
+    expect.equal(draw2, 'draw');
+    expect.equal(draw3, 'draw');
+});
+test('time to test getRandomThrow', (expect) => {
+    const number1 = getRandomThrow(1);
+    const number2 = getRandomThrow(2);
+    const number3 = getRandomThrow(3);
+    
+    expect.equal(number1, 'rock');
+    expect.equal(number2, 'paper');
+    expect.equal(number3, 'scissors');
 });
