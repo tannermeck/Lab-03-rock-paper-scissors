@@ -6,7 +6,7 @@
 img {
     height: 100px;
     width: 150px;
-    margin: 20px;
+    margin: 20px 20px 0px 20px;
 }
 input[type=radio]{
     display: none;
@@ -25,4 +25,18 @@ input[type=radio]:not(:checked) +img:hover {
 }
 div {
     padding: 10px;
+    margin: 20px;
+}
+div {
+    font-weight: bolder;
+    font-size: 2rem;
+}
+.score {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+span {
+    font-size: 1.5rem;
+    color:darkblue
 }

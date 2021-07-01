@@ -9,6 +9,7 @@ const result = document.getElementById('result');
 const scoreWins = document.getElementById('score-wins');
 const scoreLosses = document.getElementById('score-losses');
 const scoreDraws = document.getElementById('score-draws');
+const computerChose = document.getElementById('computer-chose');
 let wins = 0;
 let losses = 0;
 let draws = 0;
@@ -23,15 +24,19 @@ submitButton.addEventListener('click', () => {
     if (winner === true){
         wins++;
         scoreWins.textContent = wins;
-        result.textContent = 'YOU WIN';
+        result.textContent = 'YOU WON!!';
+        computerChose.textContent = computerChoice.toUpperCase();
     } else if (winner === false){
         losses++;
-        result.textContent = 'You Lost';
+        result.textContent = 'You Lost!';
         scoreLosses.textContent = losses;
-    } else if (winner === draw){
+        computerChose.textContent = computerChoice.toUpperCase();
+
+    } else if (winner === 'draw'){
         draws++;
-        result.textContent = "It's a draw";
-        scoreDraws = draws;
+        result.textContent = "It's a draw!";
+        scoreDraws.textContent = draws;
+        computerChose.textContent = computerChoice.toUpperCase();
     }
 });
 
